@@ -1,12 +1,10 @@
 [Unit]
 Description=GNOME Settings Daemon
-IgnoreOnIsolate=true
-Before=gnome-session.service
 
 [Service]
-Environment=DESKTOP_SESSION=gnome
 BusName=org.gnome.SettingsDaemon
 ExecStart=/usr/lib/gnome-settings-daemon/gnome-settings-daemon
+Restart=on-failure
 
 [Install]
-WantedBy=default.target
+WantedBy=x11.target

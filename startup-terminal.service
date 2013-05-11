@@ -1,0 +1,12 @@
+[Unit]
+Description=Initial terminal
+RefuseManualStart=yes
+After=window-manager.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/gnome-terminal
+KillMode=none
+
+[Install]
+WantedBy=graphical.target

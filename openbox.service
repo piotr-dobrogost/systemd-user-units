@@ -1,18 +1,14 @@
 [Unit]
 Description=Openbox
 Wants=compton.service
-Wants=gnome-sound-applet.service
-Wants=nm-applet.service
-Wants=stalonetray.service
-Conflicts=gnome-session.service
-After=xorg.target
 After=environment.target
+Wants=window-manager.target
+Before=window-manager.target
 
 [Service]
 ExecStart=/usr/bin/openbox
-ExecReload=/usr/bin/openbox --reload
+ExecReload=/usr/bin/openbox --reconfigure
 ExecStop=/usr/bin/openbox --exit
-
 KillMode=process
 Restart=always
 RestartSec=1

@@ -1,0 +1,9 @@
+[Unit]
+Description=Kerberos TGT renewal service
+
+[Service]
+ExecStart=/usr/bin/krenew -i -K 60 -v
+ExecReload=/bin/kill -ALRM $MAINPID
+
+[Install]
+WantedBy=default.target

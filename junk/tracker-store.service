@@ -1,0 +1,8 @@
+[Unit]
+Description=Tracker Database Daemon
+Wants=tracker-miner-fs.service
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.Tracker1
+ExecStart=/usr/lib/tracker/tracker-store

@@ -1,10 +1,10 @@
 [Unit]
-Description=XBindKeys key grabber
+Description=XBindKeys daemon
 After=environment.target
 
 [Service]
-ExecStart=/usr/bin/xbindkeys -n -f ${XDG_CONFIG_HOME}/xbindkeys/xbindkeysrc
+ExecStart=/usr/bin/xbindkeys --nodaemon --file ${XDG_CONFIG_HOME}/xbindkeys/xbindkeysrc
 KillMode=process
 
 [Install]
-WantedBy=default.target
+WantedBy=x11.target

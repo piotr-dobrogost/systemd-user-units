@@ -1,0 +1,7 @@
+[Unit]
+Description=Compton compositor
+Wants=window-manager.target
+Before=window-manager.target
+
+[Service]
+ExecStart=/usr/bin/compton
