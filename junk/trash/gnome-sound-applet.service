@@ -1,6 +1,0 @@
-[Service]
-ExecStart=/usr/bin/gnome-sound-applet
-PartOf=openbox.service
-
-[Install]
-WantedBy=default.target

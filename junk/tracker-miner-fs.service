@@ -1,8 +1,0 @@
-[Unit]
-Description=Tracker File System Crawler Daemon
-BindTo=tracker-store.service
-
-[Service]
-Type=dbus
-BusName=org.freedesktop.Tracker1.Miner.Files
-ExecStart=/usr/lib/tracker/tracker-miner-fs

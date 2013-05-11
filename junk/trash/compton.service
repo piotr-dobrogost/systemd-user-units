@@ -1,9 +1,0 @@
-[Unit]
-Description=Compton X11 compositor
-Conflicts=gnome-session.service
-
-[Service]
-ExecStart=/usr/bin/compton -c -C
-
-[Install]
-WantedBy=default.target

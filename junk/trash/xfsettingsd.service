@@ -1,9 +1,0 @@
-[Unit]
-Description=Xfce4 Configuration Service
-
-[Service]
-BusName=org.xfce.SettingsDaemon
-ExecStart=/usr/bin/xfsettingsd
-
-[Install]
-Alias=dbus-org.xfce.SettingsDaemon.service
