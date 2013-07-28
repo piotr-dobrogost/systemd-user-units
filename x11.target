@@ -1,3 +1,0 @@
-[Unit]
-Description=Graphical interface
-Wants=window-manager.service

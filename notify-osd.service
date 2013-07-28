@@ -1,9 +1,0 @@
-[Unit]
-Description=NotifyOSD notification daemon
-
-[Service]
-BusName=org.freedesktop.Notifications
-ExecStart=/usr/lib/notify-osd/notify-osd
-
-[Install]
-WantedBy=x11.target
