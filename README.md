@@ -1,1 +1,3 @@
-Currently this is a large mess, since users normally would want different services to be run in background (user@.service) and in X11 sessions (user-session@.service)...
+Currently I'm limiting this repository to services that work without a graphical display (X11 or Wayland or anything else). As of systemd v205, one cannot use `systemd --user` standalone anyway (instead, a user service manager is started automatically on first login).
+
+This is a personal configuration repo, so I'm not going to accept any pull requests adding units for programs that I don't use and/or don't even have installed. In fact, expect this repository to be deleted soon.
