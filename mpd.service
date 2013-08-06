@@ -4,6 +4,7 @@ After=sound.target
 
 [Service]
 Type=forking
+Environment=PULSE_PROP=application.icon_name=sound
 ExecStart=/usr/bin/mpd
 PIDFile=%t/mpd.pid
 
