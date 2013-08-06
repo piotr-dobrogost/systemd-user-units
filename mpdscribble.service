@@ -1,0 +1,10 @@
+[Unit]
+Description=Last.fm client for mpd
+Requires=mpd.socket
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mpdscribble --no-daemon
+
+[Install]
+WantedBy=default.target
