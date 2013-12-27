@@ -1,0 +1,7 @@
+[Unit]
+Description=tmux server
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c "tmux start-server \; wait-for systemd"
+ExecStop=/bin/sh -c "tmux wait-for -S systemd \; kill-server"

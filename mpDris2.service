@@ -8,5 +8,4 @@ BusName=org.mpris.MediaPlayer2.mpd
 ExecStart=/usr/bin/mpDris2
 
 [Install]
-# Still not sure.
-#WantedBy=graphical.target
+WantedBy=default.target
