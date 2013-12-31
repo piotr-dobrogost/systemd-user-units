@@ -1,0 +1,6 @@
+[Unit]
+Description=hefur BitTorrent tracker
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/hefurd -http-port 37979 -udp-port 37979 -control-socket %t/hefur -torrent-dir %h/.cache/hefur -scan-interval 15
