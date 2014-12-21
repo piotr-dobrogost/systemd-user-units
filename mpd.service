@@ -3,7 +3,7 @@ Description=Music Player Daemon
 
 [Service]
 Type=forking
-Environment=PULSE_PROP=application.icon_name=sonata
+Environment=PULSE_PROP=application.icon_name=mpd
 ExecStart=/usr/bin/mpd --verbose
 PIDFile=%t/mpd.pid
 
